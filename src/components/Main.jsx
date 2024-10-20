@@ -2,14 +2,30 @@ import basket_header from "../assets/basket_header.jpg"
 import anbc from "../assets/anbc.jpg"
 import image from "../assets/image.jpg"
 import bask from "../assets/bask.jpg"
+import baski from "../assets/baski.jpg"
 import president from "../assets/president.jpg"
+import fleche from "../assets/fleche.jpg"
+import cahier from "../assets/cahier.jpg"
+
 
 
 const Main = () => {
   return (
    <main>
      <section>
-     <img src={basket_header} alt="logo"  className="w-screen "/>
+      <div className="relative">
+      <img src={basket_header} alt="logo"  className="w-full h-240 "/>
+      <div className="absolute top-72 right-20">
+      <p className=" text-white font-bold text-7xl">Le basket, plus qu'un jeu,
+      </p>
+      <br />
+      <p className=" text-white font-bold text-7xl ml-32">une passion qui unit !</p>
+      </div>
+      <button className=" absolute top-96 right-24 bg-green-600 mt-32 px-2 py-2 text-3xl text-white">
+        inscrivez vous maintenant
+      </button>
+      
+      </div>
      </section>
 
      <h1 className="pt-14 flex justify-center text-4xl font-semibold">Dernier resultat des matchs</h1>
@@ -66,7 +82,7 @@ const Main = () => {
      </section>
 
      <section>
-     <img src={basket_header} alt="logo"  className="w-screen h-64"/>
+     <img src={basket_header} alt="logo"  className="w-full h-56 object-cover"/>
      </section>
 
      <section >
@@ -80,9 +96,11 @@ const Main = () => {
             </div>
             </div>
         <div>
-            <div>
+            <div className="relative">
+            <img src={fleche} alt="logo"  className=" top-10 left-0 absolute w-20 h-auto ml-32"/>
+
             <h1 className="text-4xl font-semibold text-green-800">Découvrez notre histoire</h1>
-            <p className="pt-5 px-32 text-justify">L'histoire de notre ligue de basket ,réunir les passionnés
+            <p className="pt-5 pr-36 pl-64 text-justify">L'histoire de notre ligue de basket ,réunir les passionnés
                de basket autour d'un championnat compétitif et inspirant. 
                Tout ce qui n'était qu'une série de tournois régionaux a 
                rapidement pris de l'ampleur. Grâce à la passion des joueurs, 
@@ -93,34 +111,78 @@ const Main = () => {
                règlements pour offrir une compétition toujours plus excitante.</p>
             </div>
 
-              <div>
+              <div className="relative">
+              <img src={fleche} alt="logo"  className=" top-16 left-0 absolute w-20 h-auto ml-32"/>
               <h1 className="text-4xl font-semibold text-green-800 pt-8 text-center pr-44">notre mission</h1>
-              <p className="pt-5 px-24 text-justify">la ligue de basket assure la régulation, la gestion et la 
+              <p className="pt-5 pr-36 pl-64 text-justify">la ligue de basket assure la régulation, la gestion et la 
                   promotion du sport, jouant un rôle essentiel dans le bon 
                   fonctionnement des compétitions et la préservation.</p>
               </div>
     
         </div>
 
-        <div>
-        <h1 className="text-4xl font-semibold text-green-800 text-start pt-20 pl-36">notre role</h1>
-        <p className="pt-5 px-24 py-12 text-justify">Le rôle de la ligue de basket est d'organiser les compétitions, 
+
+        </div>
+
+        <div className="relative">
+        <img src={cahier} alt="logo"  className=" top-32 left-0 absolute w-20 h-auto ml-32"/>
+        <h1 className="text-4xl font-semibold text-green-800 text-start pt-20 ml-80">notre role</h1>
+        <p className="pt-5 mr-96 ml-80 py-12 text-justify">Le rôle de la ligue de basket est d'organiser les compétitions, 
 de réguler les transferts de joueurs, et de garantir le respect des  règles et de l'équité financière entre les clubs.
 La ligue de basket joue un rôle fondamental dans l'organisation et la régulation du sport à un niveau performant. Elle est responsable 
 de la gestion des compétitions, notamment en élaborant le calendrier des matchs et en structurant les tournois, des phases régulières 
 aux éliminatoires.</p>
         </div>
-
-        </div>
              </section>
-             <div>
-             <button className="bg-green-600 w-36 text-white my-12 flex items-center justify-center">En savoir plus</button>
+             <div className="flex items-center justify-center">
+             <button className="bg-green-600 w-40 h-10 text-white mt-12 ">En savoir plus</button>
              </div>
 
-    <section className=" flex items-center justify-between">
-      <div>1</div>
-      <div>2</div>
-      <div>3</div>
+    <section className=" flex items-center justify-between pt-0">
+    
+    <div className="pl-12 relative flex ">
+      <div className="bg-green-600 w-48 h-96 ">
+      </div>
+
+      <div className=" absolute bg-black w-48 h-80  left-52">
+      </div>
+    </div>
+
+      <div>
+        <img src={baski} alt="" className="w-200 pb-10" />
+      </div>
+      <div className=" pr-32">
+        <table class=" w-96 h-80 border-collapse border border-gray-200">
+  <thead>
+    <tr>
+      <th class="bg-green-500 text-white">classements</th>
+    
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="bg-black text-white">Donnée 1</td>
+  
+    </tr>
+    <tr>
+      <td class="border border-gray-200 p-4">Donnée 4</td>
+    
+     
+    </tr>
+  </tbody>
+</table>
+</div>
+    </section>
+
+
+    <section>
+      <div className="bg-green-600 w-full h-36 flex justify-around items-center">
+      <h1 className="text-white  pt-0 pl-36 font-semibold text-2xl">Rejoignez nous pour suivre les dernières actualités des matchs</h1>
+      <button className="bg-white w-36 h-10">
+        contactez nous
+      </button>
+      </div>
+
     </section>
    </main>
   )

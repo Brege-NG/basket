@@ -7,7 +7,7 @@ const Headers = () => {
     <header className="flex items-center w-full bg-green-600">
       <img src={image} alt="logo"  className="w-12 rounded-full h-auto ml-32"/>
     
-         <nav className="ml-auto mr-24 text-1xl text-white ">
+         <nav className="ml-auto mr-24 text-2xl text-white ">
            <ul className="flex space-x-6">
             <li>
               <a href="" className=" hover:text-black">Accueil</a>
@@ -25,6 +25,8 @@ const Headers = () => {
   )
 }
 export default Headers
+
+
     // <div className="bg-green-600 h-12 flex justify-between px-4">
     //     
     // </div>
